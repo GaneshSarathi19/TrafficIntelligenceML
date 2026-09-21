@@ -19,7 +19,7 @@ The project investigates traffic volume prediction, traffic Level of Service cla
 
 ---
 
-# 1. Project Overview
+# Project Overview
 
 Traffic conditions are influenced by several interacting factors such as time of day, weather, road characteristics, accessibility, vehicle behaviour, and environmental conditions.
 
@@ -33,7 +33,7 @@ The three tracks use separate datasets and are implemented as independent Machin
 
 ---
 
-# 2. Project Objectives
+# Project Objectives
 
 The major objectives of the project are:
 
@@ -50,7 +50,7 @@ The major objectives of the project are:
 
 ---
 
-# 3. Project Tracks
+# Project Tracks
 
 | Track | Objective | Dataset | Learning Type |
 |---|---|---|---|
@@ -60,7 +60,7 @@ The major objectives of the project are:
 
 ---
 
-# 4. Track 1 – Regression
+# Track 1 – Regression
 
 ## Problem Statement
 
@@ -155,7 +155,7 @@ Cyclical encoding using `hour_sin` and `hour_cos` was also used to represent the
 
 ---
 
-# 5. Regression Algorithms
+# Regression Algorithms
 
 All ten algorithms required by the project guidelines are implemented using the same overall preprocessed dataset and held-out test set.
 
@@ -186,7 +186,7 @@ Five-fold cross-validated R² is also used for the selected top-performing model
 
 ---
 
-# 6. Regression Results
+# Regression Results
 
 The following results were obtained on the held-out test set.
 
@@ -219,38 +219,9 @@ The Random Forest model achieved the highest test-set R² among the implemented 
 
 Feature importance from the tree-based model showed that `hour` was the dominant feature, followed by features such as `day_of_week`, `is_weekend`, and `temp`.
 
----
 
-## Regression Visualizations
 
-The regression notebook includes:
-
-- Numerical feature distribution plots
-- Categorical feature distributions
-- Target distribution
-- Target boxplot
-- Correlation heatmap
-- Feature-target scatter plots
-- Traffic volume over time
-- Average traffic volume by hour
-- Model comparison
-- Predicted vs Actual plot
-- Residual analysis
-- Tree-based feature importance
-
----
-
-## Polynomial Regression Note
-
-Polynomial feature expansion across all 70 processed features resulted in excessive memory usage.
-
-Therefore, polynomial expansion was restricted to the relevant numerical/engineered features before applying Polynomial Regression.
-
-This allowed the degree comparison to be performed without creating an impractically large feature matrix.
-
----
-
-# 7. Track 2 – Classification
+# Track 2 – Classification
 
 ## Problem Statement
 
@@ -303,7 +274,7 @@ The predictor variables are grouped into categories including:
 ---
 
 
-# 8. Classification Algorithms
+# Classification Algorithms
 
 The classification track contains ten algorithms required by the project guidelines.
 
@@ -424,7 +395,7 @@ Examples include:
 
 ---
 
-# 10. Clustering Algorithms
+# Clustering Algorithms
 
 The clustering track implements:
 
@@ -446,7 +417,7 @@ The clustering algorithms are evaluated using:
 - Calinski-Harabasz Index
 
 
-# 11. Common Machine Learning Workflow
+# Common Machine Learning Workflow
 
 Each track follows a structured Machine Learning workflow.
 
