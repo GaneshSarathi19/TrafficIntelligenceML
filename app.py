@@ -74,8 +74,7 @@ def load_models():
         return None
 
 # Load models at startup
-#loaded_models = load_models()
-loaded_models = None
+loaded_models = load_models()
 using_real_models = loaded_models is not None and len(loaded_models) > 0
 
 # Count only algorithm models (exclude scalers/encoders)
